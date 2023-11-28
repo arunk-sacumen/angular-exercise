@@ -1,0 +1,16 @@
+version: '2'
+services:
+  demo-angular-app:
+    image: demo-angular-image
+    build:
+      context: /home/arun/projects/demo-angular-project/
+      dockerfile: /home/arun/projects/demo-angular-project/docker/Dockerfile
+    ports:
+      - 4201:4201
+    command: ng serve --host 0.0.0.0 --port 4201
+    # command: tail -f /dev/null
+    volumes:
+      - /home/arun/projects/demo-angular-project/src:/home/sacumen/app/src
+      - /home/sacumen/app/node_modules
+
+
