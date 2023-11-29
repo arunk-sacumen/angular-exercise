@@ -12,11 +12,11 @@ export class DataService {
   }
 
   getUsers() : Observable<any>{
-    return this.http.get("http://localhost:3000/users");
+    return this.http.get("/users");
   }
 
   getPosts() : Observable<any>{
-    return this.http.get("http://localhost:3000/posts");
+    return this.http.get("/posts");
   }
 
 }

@@ -7,7 +7,7 @@ services:
       dockerfile: /home/arun/projects/angular-exercise/demo-angular-project/docker/Dockerfile
     ports:
       - 4201:4201
-    command: ng serve --host 0.0.0.0 --port 4201
+    command: ng serve --host 0.0.0.0 --port 4200 --proxy-config proxy.conf.json
     # command: tail -f /dev/null
     volumes:
       - /home/arun/projects/angular-exercise/demo-angular-project/src:/home/sacumen/app/src
