@@ -9,11 +9,11 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'users',
+    path: 'user',
     component: UsersComponent,
   },
   {
-    path: 'posts',
+    path: 'post',
     component: PostsComponent
   },
   {
