@@ -1,9 +1,9 @@
 const PROXY_CONFIG = [{
   context: [
        "/**",
-       "/posts"
+       "/users/*",
   ],
-  target: "http://localhost:3000",
+  target: "http://http://localhost:3000",
   secure: false,
   changeOrigin: true
 }]
